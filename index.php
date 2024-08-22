@@ -83,11 +83,14 @@ $services = mysqli_query($db,$service_query);
                                             <li class="nav-item"><a class="nav-link" href="#service">service</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
                                             <?php if(isset($_SESSION['author_id'])) :?>
                                             <li class="nav-item"><a class="nav-link" href="./authentication/login.php">Dashboard</a></li>
                                             <?php else: ?>
                                                 <li class="nav-item"><a class="nav-link" href="./authentication/login.php">Login/Register</a></li>
                                             <?php endif; ?>
+
+                                            
                                         </ul>
                                     </div>
                                     <div class="header-btn">
