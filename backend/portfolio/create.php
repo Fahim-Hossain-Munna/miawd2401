@@ -20,7 +20,7 @@ include '../../public/fonts/fonts.php';
                     <label for="exampleInputEmail1" class="form-label my-2">Portfolio Sub title</label>
                     <input name="subtitle" type="text" class="form-control" id="hudai" aria-describedby="emailHelp">
                     <label for="exampleInputEmail1" class="form-label my-2">Portfolio Description</label>
-                    <textarea name="description" type="email" class="form-control" rows="5"> </textarea>
+                    <textarea name="description" type="email" class="form-control" rows="5"></textarea>
                     <picture class="d-block my-4">
                         <img id="port_show_img" src="../../public/uploads/default/default.jpg" alt="" style="width:100%; height: 400px; object-fit:contain">
                     </picture>

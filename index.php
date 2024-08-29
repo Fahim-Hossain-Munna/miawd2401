@@ -295,7 +295,7 @@ $portfolios = mysqli_query($db,$port_query);
 								</p>
 							</div>
 						</div>
-                    <?php endforeach; ?>                
+                    `<?php endforeach; ?>                
                     </div>
 				</div>
 			</section>
@@ -445,32 +445,6 @@ $portfolios = mysqli_query($db,$port_query);
                             <div class="single-brand">
                                 <img src="./public/frontend/img/brand/brand_img01.png" alt="img">
                             </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="./public/frontend/img/brand/brand_img02.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="./public/frontend/img/brand/brand_img03.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="./public/frontend/img/brand/brand_img04.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="./public/frontend/img/brand/brand_img05.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-xl-2">
-                            <div class="single-brand">
-                                <img src="./public/frontend/img/brand/brand_img03.png" alt="img">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -499,11 +473,11 @@ $portfolios = mysqli_query($db,$port_query);
                         </div>
                         <div class="col-lg-6">
                             <div class="contact-form">
-                                <form action="#">
-                                    <input type="text" placeholder="your name *">
-                                    <input type="email" placeholder="your email *">
-                                    <textarea name="message" id="message" placeholder="your message *"></textarea>
-                                    <button class="btn">SEND</button>
+                                <form action="./backend/email/action.php" method="POST">
+                                    <input type="text" placeholder="your name *" name="name">
+                                    <input type="email" placeholder="your email *" name="email" style="text-transform: lowercase !important;">
+                                    <textarea name="body" id="message" placeholder="your message *"></textarea>
+                                    <button type="submit" name="email_send" class="btn">SEND</button>
                                 </form>
                             </div>
                         </div>
